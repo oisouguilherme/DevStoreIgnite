@@ -55,13 +55,13 @@ export default async function Home() {
       {otherProducts.map((product) => {
         return (
           <Link
-            href={`/product/${highlightedProducts.slug}`}
+            href={`/product/${product.slug}`}
             key={product.id}
             className="group col-span-3 row-span-3 rounded-lg bg-zinc-900 overflow-hidden flex justify-center items-end relative"
           >
             <Image
               className="group-hover:scale-105 transition-transform duration-500"
-              src="/2.png" /* {product.image} */
+              src={product.image}
               width={860}
               height={860}
               alt={product.title}
