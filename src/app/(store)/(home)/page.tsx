@@ -47,7 +47,7 @@ export default async function Home() {
       {otherProducts.map((product) => {
         return (
           <Link
-            href={""}
+            href={`/product/${highlightedProducts.slug}`}
             key={product.id}
             className="group col-span-3 row-span-3 rounded-lg bg-zinc-900 overflow-hidden flex justify-center items-end relative"
           >
