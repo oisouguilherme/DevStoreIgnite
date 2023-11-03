@@ -36,7 +36,7 @@ export default async function Home() {
       >
         <Image
           className="group-hover:scale-105 transition-transform duration-500"
-          src="/1.png"
+          src={highlightedProducts.image}
           width={860}
           height={860}
           alt="Roupa"
